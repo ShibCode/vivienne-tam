@@ -59,6 +59,7 @@ nav {
 }
 nav > img {
   width: 190px;
+  cursor: pointer;
 }
 .nav-link {
   font-size: 15px;
@@ -327,6 +328,9 @@ footer {
   }
   .footer-heading {
     font-size: 35px;
+  }
+  nav{
+    gap: 2rem;
   }
 }
 @media screen and (max-width: 400px) {
