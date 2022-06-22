@@ -40,6 +40,7 @@ section {
   font-size: 20px;
   font-weight: 500;
   width: 75%;
+  font-weight: 500;
 }
 :is(.section4-content, .section5-content) > .section-content-para {
   font-size: 25px;
@@ -329,7 +330,7 @@ footer {
   .footer-heading {
     font-size: 35px;
   }
-  nav{
+  nav {
     gap: 2rem;
   }
 }
