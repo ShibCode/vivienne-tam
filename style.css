@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family=Inter:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Adamina;
+}
+
+:root {
+  --padding: 4rem;
+  --side-padding: 8rem;
+}
+
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+.section-content {
+  background-color: hsla(0, 0%, 100%, 0.92);
+  max-width: 800px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 510px;
+}
+.section-content-heading {
+  font-size: clamp(35px, 3.88vw, 45px);
+  color: #d0063e;
+  text-transform: uppercase;
+  width: 75%;
+}
+.section-content-para {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  width: 75%;
+}
+:is(.section4-content, .section5-content) > .section-content-para {
+  font-size: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  max-width: 1440px;
+  padding: 2rem 0;
+  width: 90%;
+}
+nav > img {
+  width: 190px;
+}
+.nav-link {
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  user-select: none;
+}
+.nav-link:hover {
+  opacity: 0.75;
+}
+.nav-link:active {
+  opacity: 0.6;
+}
+
+.section-1 {
+  background-image: url("./Assets/section1-bg.png");
+  justify-content: flex-end;
+}
+.section1-content {
+  padding: var(--padding) var(--padding) 1rem var(--padding);
+}
+.section1-content > p {
+  width: 94%;
+}
+
+.section-2 {
+  background-image: url("./Assets/section2-bg.png");
+}
+.section2-content {
+  padding: var(--padding) var(--side-padding);
+}
+.section2-content > p {
+  width: 100%;
+}
+
+.section-3 {
+  background-image: url("./Assets/section3-bg.png");
+}
+.section3-content {
+  padding: var(--padding) var(--side-padding);
+}
+.section3-content > p {
+  width: 100%;
+}
+
+.section-4 {
+  background-image: url("./Assets/section4-bg.png");
+  justify-content: flex-end;
+}
+.section4-content {
+  padding: var(--padding);
+  justify-content: space-between;
+  min-height: 472px;
+}
+
+.section-5 {
+  background-image: url("./Assets/section5-bg.png");
+}
+.section5-content {
+  padding: var(--padding) var(--side-padding);
+  min-height: 580px;
+}
+.section5-content > :is(h1, p) {
+  width: 100%;
+}
+
+.section-6 {
+  background-image: url("./Assets/section6-bg.png");
+  justify-content: flex-end;
+}
+.section6-content {
+  padding: var(--padding);
+  gap: 5rem;
+}
+
+.section-6-content-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-6-content-top > h1 {
+  width: 200px !important;
+}
+label {
+  font-size: 14px;
+}
+.email-div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 2px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.email-input {
+  height: 50px;
+  padding-left: 12px;
+}
+.register-btn {
+  background-color: #d0063e;
+  border: none;
+  width: 70%;
+  height: 50px;
+  border-radius: 24px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.register-btn:hover {
+  background-color: hsla(343, 94%, 42%, 0.75);
+}
+.register-btn:active {
+  background-color: hsla(343, 94%, 42%, 0.6);
+}
+
+footer {
+  display: flex;
+  gap: 5rem;
+  padding: 4rem 8rem;
+  align-items: center;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  height: 500px;
+}
+.footer-heading {
+  font-size: 45px;
+  color: #d0063e;
+  width: 200px;
+  text-transform: uppercase;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.form-top {
+  text-transform: uppercase;
+}
+.footer-email-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+}
+.sub-btn {
+  background-color: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 30px;
+  padding: 1rem 3rem;
+  font-size: 14px;
+  margin-top: 0.25rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sub-btn:hover {
+  background-color: #979797;
+  color: white;
+}
+.sub-btn:active {
+  opacity: 0.75;
+}
+
+.footer-right {
+  display: flex;
+  gap: var(--padding);
+}
+.member {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.member-photo {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+  .footer-left {
+    height: 350px;
+    max-width: 500px;
+    width: 90%;
+  }
+  .footer-heading {
+    width: 100%;
+  }
+  .footer-form {
+    gap: 0.5rem;
+  }
+  .sub-btn {
+    margin-top: 0.5rem;
+  }
+  .footer-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form-top {
+    align-self: center;
+  }
+  .member {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  :root {
+    --side-padding: 6rem;
+  }
+  nav {
+    gap: 3rem;
+  }
+  section {
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section-content-heading {
+    width: 100%;
+    font-size: clamp(28px, 5.38vw, 35px);
+  }
+  :is(.section4-content, .section5-content) > .section-content-para {
+    font-size: 20px;
+  }
+  .section-content-para {
+    width: 100% !important;
+  }
+  .email-div {
+    width: 100%;
+  }
+  .register-btn {
+    width: 100%;
+  }
+  .section4-content {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 575px) {
+  :root {
+    --side-padding: var(--padding);
+  }
+}
+@media screen and (max-width: 500px) {
+  :root {
+    --padding: 3rem;
+  }
+  .section-content-para {
+    font-size: 18px !important;
+  }
+  .form {
+    gap: 2rem;
+  }
+  .section6-content {
+    gap: 3rem;
+  }
+  .footer-heading {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-content-heading {
+    font-size: 24px;
+  }
+  .member {
+    gap: 1rem;
+  }
+  .form-top {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section-content-heading {
+    font-size: 20px;
+  }
+}
